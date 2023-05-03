@@ -31,3 +31,10 @@ body{
    font-family: 'Open Sans', sans-serif;
    /*font-family: 'Poppins', sans-serif;*/
 }
+
+.container{
+   width: 100%;
+   max-width: 1310px;
+   padding: 0px 15px;
+   margin: 0 auto;
+}
