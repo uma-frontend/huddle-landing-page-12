@@ -36,10 +36,10 @@
 
 /*Body*/
 body{
-   font-family: 'Open Sans', sans-serif;
+   font-family: "Open Sans", sans-serif;
    font-weight: normal;
    background-color: #674bb1;
-   height: 100vh;
+   /*height: 100vh;*/
    color: #fff;
    background-image: url(../images/bg-desktop.svg);
    background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body{
    width: 100%;
    max-width: 1310px;
    padding: 0px 15px;
-   margin: 0 auto;
+   margin: 0px auto;
 }
 
 /*HEADER*/
@@ -66,13 +66,18 @@ body{
    margin: 0px 0px 30px 0px;
 }
 .main__img-box {
-   width: 709px;
+   width: 100%;
+   max-width: 709px;
+}
+.main__img{
+   display: block;
+   width: 100%;
 }
 .main__info {
    padding: 45px 0px 0px 60px;
 }
 .main__title {
-   font-family: 'Poppins', sans-serif;
+   font-family: "Poppins", sans-serif;
    font-weight: 600;
    font-size: 40px;
    margin: 0px 0px 40px 0px;
@@ -94,6 +99,7 @@ body{
 .footer {
    display: flex;
    justify-content: flex-end;
+   margin: 0px 0px 20px 0px;
 }
 .footer__social-media {
    display: flex;
@@ -112,3 +118,74 @@ body{
 .footer__icon-wrap:not(:last-child){
    margin: 0px 16px 0px 0px;
 }
+
+/*MEDIA QUERY*/
+@media (max-width: 1200px) {
+   .header {
+      padding: 40px 0px 60px 0px;
+   }
+   .main {
+      flex-direction: column;
+      align-items: center;
+   }
+   .main__img-box {
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+   }
+   .main__info {
+      text-align: center;
+      padding: 0px;
+   }
+   .main__text {
+      padding: 0px;
+   }
+   .main__btn {
+      padding: 20px 84px;
+   }
+   .footer {
+      display: flex;
+      justify-content: center;
+   }
+   .footer__social-media {
+      display: flex;
+      align-items: center;
+   }
+}
+@media (max-width: 1024px) {
+  .main__title{
+      font-size: 32px;
+  }
+   .header__img {
+      width: 224px;
+   }
+}
+@media (max-width: 768px) {
+   body{
+      background-image: url(../images/bg-mobile.svg);
+   }
+   .header__img {
+      width: 132px;
+   }
+   .main__img {
+      width: 100%;
+   }
+   .main__btn {
+      padding: 20px 150px;
+   }
+ }
+ @media (max-width: 425px) {
+   .main__title{
+      font-size: 28px;
+   }
+   .main__text{
+      padding: 0px 20px;
+   }
+   .main__btn {
+      padding: 20px 100px;
+   }
+ }
+ @media (max-width: 320px) {
+   .main__title{
+      font-size: 24px;
+   }
+ }
