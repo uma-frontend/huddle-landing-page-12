@@ -94,6 +94,12 @@ body{
    border-radius: 30px;
    box-shadow: 0 0 5px #674bb1;
    text-decoration: none;
+   transition: all 0.3s ease;
+}
+.main__btn:hover{
+   background-color: #e980e7;
+   color: #fff;
+
 }
 /*FOOTER*/
 .footer {
@@ -109,11 +115,19 @@ body{
    width: 40px;
    height: 40px;
    border-radius: 50%;
+   color: #fff;
    border: 1px solid #fff;
    display: flex;
    justify-content: center;
    align-items: center;
    font-size: 18px;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+.footer__icon-wrap:hover{
+   border-color: #e980e7;
+   color: #e980e7;
+
 }
 .footer__icon-wrap:not(:last-child){
    margin: 0px 16px 0px 0px;
